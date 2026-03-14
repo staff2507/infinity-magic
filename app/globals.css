@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --animate-reveal: reveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+
+  @keyframes reveal {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+}
+
+.burger-icon {
+  width: 24px;  
+  height: 14px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center; 
+}
+
+.burger-icon.is-open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.burger-icon.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.is-open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
