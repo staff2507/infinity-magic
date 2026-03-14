@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
         
         <Link 
-          href="/" 
+          href="#" 
           className="text-xl font-serif tracking-[0.3em] text-white uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer"
         >
           Ruslan Infinity
