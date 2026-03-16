@@ -13,12 +13,16 @@ const scrollToTop = (e: React.MouseEvent) => {
 };
 
 const scrollToSection = (e: React.MouseEvent, id: string) => {
-  e.preventDefault();
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-    window.history.pushState({}, '', `#${id}`);
-  }
+  const isHomePage = window.location.pathname === '/';
+
+  if (isHomePage) {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState({}, '', `#${id}`);
+    }
+  } 
 };
 
 export default function Header() {
