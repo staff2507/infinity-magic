@@ -2,6 +2,13 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
+const scrollToTop = (e: React.MouseEvent) => {
+  if (window.location.pathname === '/') {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+};
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -11,6 +18,7 @@ export default function Header() {
         
         <Link 
           href="/" 
+          onClick={scrollToTop}
           className="text-xl font-serif tracking-[0.3em] text-white uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer"
         >
           Ruslan Infinity
@@ -44,7 +52,7 @@ export default function Header() {
           border-b md:border-none border-zinc-900
           text-[10px] uppercase tracking-[0.2em]
         `}>
-          <Link href="#" onClick={() => setIsOpen(false)} className="hover:text-white transition">Главная</Link>
+          <Link href="/" onClick={scrollToTop} className="hover:text-white transition">Главная</Link>
           <Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-white transition">Услуги</Link>
           <Link href="#contacts" onClick={() => setIsOpen(false)} className="hover:text-white transition">Контакты</Link>
         </div>
