@@ -5,7 +5,19 @@ import Link from 'next/link'
 const scrollToTop = (e: React.MouseEvent) => {
   if (window.location.pathname === '/') {
     e.preventDefault();
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    window.history.pushState({}, '', '/');
+  }
+};
+
+const scrollToSection = (e: React.MouseEvent, id: string) => {
+  e.preventDefault();
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    window.history.pushState({}, '', `#${id}`);
   }
 };
 
@@ -53,8 +65,8 @@ export default function Header() {
           text-[10px] uppercase tracking-[0.2em]
         `}>
           <Link href="/" onClick={scrollToTop} className="hover:text-white transition">Главная</Link>
-          <Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-white transition">Услуги</Link>
-          <Link href="#contacts" onClick={() => setIsOpen(false)} className="hover:text-white transition">Контакты</Link>
+          <Link href="/#services" onClick={(e) => scrollToSection(e, 'services')} className="hover:text-white transition">Услуги</Link>
+          <Link href="#contacts" onClick={(e) => scrollToSection(e, 'contacts')} className="hover:text-white transition">Контакты</Link>
         </div>
       </div>
     </nav>
