@@ -21,8 +21,26 @@ export default function HomePage() {
           <div className="mt-12 flex flex-col items-center gap-4">
               <div className="w-12 h-px bg-zinc-800"></div>
               <span className="text-[10px] tracking-[0.4em] text-zinc-600 uppercase font-light">
-                  Одесса • Дистанционно
+                • Дистанционно
               </span>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div className="space-y-8">
+          <div className="w-px h-12 bg-gradient-to-b from-transparent to-zinc-700 mx-auto"></div>
+          
+          <div className="max-w-2xl mx-auto">
+            <p className="text-zinc-400 text-sm md:text-base leading-relaxed font-light italic">
+              «Магия и религия довольно своеобразны и имеют свои правила. Каждый человек имеет право верить во что-то свое. Кто-то христианин, мусульманин, другие же верят в магию. Это работает по одному принципу, магия — более универсальный продукт для каждой культуры и народа».
+            </p>
+          </div>
+
+          <div className="flex justify-center items-center gap-4">
+            <div className="h-px w-8 bg-zinc-800"></div>
+            <div className="w-1.5 h-1.5 rounded-full bg-zinc-700"></div>
+            <div className="h-px w-8 bg-zinc-800"></div>
           </div>
         </div>
       </section>
@@ -43,6 +61,9 @@ export default function HomePage() {
             </p>
             <p>
               Я не даю пустых обещаний, а провожу детальный анализ вашей ситуации, чтобы найти корень проблемы и подобрать наиболее эффективный метод её решения.
+            </p>
+            <p>
+              Моё предназначение заключается в том что бы помочь в преодолении страхов и суеверий , идущих по тропе совершенствования в собственном выборе.
             </p>
           </div>
 

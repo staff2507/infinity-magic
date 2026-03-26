@@ -37,7 +37,7 @@ export default function Header() {
           onClick={scrollToTop}
           className="text-xl font-serif tracking-[0.3em] text-white uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer"
         >
-          Ruslan Infinity
+          Mag Infinite
         </Link>
 
             <button 

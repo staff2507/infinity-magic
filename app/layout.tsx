@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Header from './components/Header'
 
 export const metadata: Metadata = {
-  title: 'Ruslan Infinity | Магическая помощь в Одессе',
+  title: 'Mag Infinite',
   description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации в Одессе и онлайн.',
 }
 
@@ -21,6 +21,12 @@ export default function RootLayout({
         <main className="pt-32 min-h-screen">
           {children}
         </main>
+
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <p className="text-[10px] md:text-[11px] text-zinc-600 uppercase tracking-[0.2em] text-center leading-relaxed opacity-70">
+            * Все результаты индивидуальны и зависят от специфики каждого человека
+          </p>
+        </div>
 
         <footer id="contacts" className="relative mt-20 py-24 border-t border-zinc-900 overflow-hidden">
           <div 
@@ -48,7 +54,7 @@ export default function RootLayout({
             </div>
 
             <div className="pt-10 text-[10px] text-zinc-600 uppercase tracking-[0.3em]">
-              © {new Date().getFullYear()} • Ruslan Infinity • Все права защищены
+              © {new Date().getFullYear()} • Все права защищены
             </div>
           </div>
         </footer>
