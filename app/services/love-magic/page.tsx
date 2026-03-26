@@ -1,16 +1,27 @@
+import Image from 'next/image'
+
 export default function LoveMagicPage() {
   return (
+    <div className="min-h-screen bg-[#050505]">
+      <div className="relative w-full h-[60vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
+        <Image
+          src="/images/love-magic-hero.webp" 
+          alt="Любовная магия — Mag Infinite"
+          fill
+          priority
+          className="object-cover object-center opacity-80" 
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
+        
+          <div className="relative z-10 flex items-end justify-center h-full pb-16">
+            <h1 className="text-4xl md:text-5xl font-serif tracking-[0.3em] text-white uppercase text-center px-6">
+              Любовная Магия
+            </h1>
+          </div>
+        </div>
     <div className="max-w-3xl mx-auto px-6 space-y-20 pb-24 animate-reveal">
       
-      <div className="text-center space-y-6">
-        <div className="w-16 h-px bg-zinc-800 mx-auto"></div>
-        <h1 className="text-4xl md:text-5xl font-serif uppercase tracking-[0.4em] text-white">
-          Любовная магия
-        </h1>
-        <p className="text-[10px] tracking-[0.6em] text-zinc-500 uppercase font-light">
-          Восстановление уз и гармония чувств
-        </p>
-      </div>
+    <div className="w-16 h-px bg-zinc-800 mx-auto"></div>
 
       <article className="space-y-10 text-zinc-400 leading-[2] tracking-wide text-justify font-light">
         
@@ -61,6 +72,7 @@ export default function LoveMagicPage() {
         </p>
       </div>
 
+    </div>
     </div>
   )
 }
