@@ -5,11 +5,18 @@ html {
 }
 
 @theme inline {
+  /* Базовые настройки */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
+  /* НАШИ КАСТОМНЫЕ ЦВЕТА (Добавь эти строки) */
+  --color-accent-red: #7f1111;        /* Насыщенный бордовый */
+  --color-accent-red-dark: #450a0a;   /* Глубокий темный бордовый */
+  --color-accent-red-light: #fca5a5;  /* Розоватый для текста при ховере */
+
+  /* Анимация */
   --animate-reveal: reveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 
   @keyframes reveal {
@@ -24,6 +31,24 @@ html {
   }
 }
 
+/* Настройки для всего сайта */
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Настройка выделения текста */
+::selection {
+  background-color: rgba(127, 17, 17, 0.4);
+  color: white;
+}
+
+/* Стили для бургера (оставляем без изменений) */
 .burger-icon {
   width: 24px;  
   height: 14px; 
@@ -52,9 +77,4 @@ html {
 
 .burger-icon.is-open span:nth-child(3) {
   transform: translateY(-6.5px) rotate(-45deg);
-}
-
-:root {
-  --background: #050505;
-  --foreground: #ededed;
 }

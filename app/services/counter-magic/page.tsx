@@ -1,0 +1,80 @@
+import Image from 'next/image'
+
+export default function CounterMagicPage() {
+  return (
+    <div className="min-h-screen bg-[#050505]">
+
+      <div className="centre w-full h-[60vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
+        <Image
+          src="/images/counter-magic-hero.webp" 
+          alt="Магия и контрмагия — Mag Infinite"
+          fill
+          priority
+          className="object-cover object-center opacity-80" 
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
+
+        <div className="relative z-10 flex items-end justify-center h-full pb-16 md:pb-20">
+          <h1 className="text-3xl md:text-5xl font-serif tracking-[0.3em] text-white uppercase text-center px-6">
+            Магия и контрмагия
+          </h1>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto px-6 space-y-20 py-24 animate-reveal">
+        
+        <div className="w-16 h-px bg-zinc-800 mx-auto"></div>
+
+        <article className="space-y-10 text-zinc-400 leading-[2] tracking-wide text-justify font-light">
+          
+          <p>
+            <span className="inline-block text-5xl md:text-7xl font-serif text-white leading-[0] mr-1 translate-y-[0px]">
+              М
+            </span>
+            агия и контрмагия — в этих терминах нет различий по сути, есть лишь разница в форме 
+            проявления. Контрмагия является одним из мощнейших инструментов и применяется в 
+            крайних случаях: когда человеку угрожает прямая опасность со стороны 
+            недоброжелателей, отдельных колдунов или ведьм всех степеней и конфессий. Мастер 
+            прибегает к контрмагии, когда клиенту систематически наносят вред или существует 
+            реальная угроза для жизни. 
+          </p>
+
+          <div className="py-12 flex flex-col items-center text-center space-y-6">
+            <div className="text-xl md:text-2xl font-serif italic text-zinc-200 max-w-lg tracking-widest leading-relaxed">
+              "Око за око, зуб за зуб. Профессионалы называют это Красной магией — 
+              высшей справедливостью в ответ на магическую агрессию."
+            </div>
+          </div>
+
+          <p>
+            Как профессионал и Мастер Черной Магии, я детально изучу вашу ситуацию посредством 
+            предсказания на картах Таро, чтобы увидеть скрытые угрозы и найти выход из тупика. 
+            Проведу глубокую диагностику на предмет проклятий, заклятий и порчи. Моя задача — 
+            выявить врага, снять колдовское воздействие и поставить мощную защиту на вас, ваш 
+            бизнес или семью. В ситуациях, когда для достижения цели все методы хороши, 
+            контрмагия становится вашим решающим преимуществом.
+          </p>
+
+          <div className="pt-10 grid gap-8 border-t border-zinc-900">
+            <div className="space-y-2">
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-red-900/80">Диагностика агрессии</h3>
+              <p className="text-sm text-zinc-500 italic">Выявление источника магической атаки и её реальной силы.</p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-red-900/80">Магическое сопровождение</h3>
+              <p className="text-sm text-zinc-500 italic">Защита проектов и решение закулисных аспектов в бизнесе и личной сфере.</p>
+            </div>
+          </div>
+        </article>
+
+        <div className="text-center pt-10 border-t border-zinc-950">
+          <p className="text-[10px] text-zinc-600 uppercase tracking-[0.3em]">
+            Справедливость • Сила • Ответный удар
+          </p>
+        </div>
+
+      </div>
+    </div>
+  )
+}

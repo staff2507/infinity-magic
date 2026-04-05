@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" className="scroll-smooth">
-      <body className="bg-[#050505] text-zinc-300 antialiased selection:bg-zinc-800 selection:text-white">
+      <body className="bg-[#050505] antialiased selection:bg-zinc-800 selection:text-white">
 
         <Header />
 
@@ -42,7 +42,7 @@ export default function RootLayout({
             <div className="space-y-4">
               <h2 className="text-3xl font-serif tracking-[0.4em] text-white uppercase">Контакты</h2>
               <p className="text-xs text-zinc-500 uppercase tracking-widest italic">
-                Для записи на консультацию используйте мессенджеры
+                Работаю как дистанционно, так и очно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю. Оплата производится по договоренности с клиентом за конкретную магическую услугу: часть — в начале работы, остальное — по её завершении.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function RootLayout({
               <ContactButton label="Telegram" href="https://t.me/+380663617631" />
               <ContactButton label="WhatsApp" href="https://wa.me/380663617631" />
               <ContactButton label="Viber" href="viber://chat?number=%2B380663617631" />
-              <ContactButton label="Email" href="mailto:maginfinity222@gmail.com?subject=Запись на консультацию" />
+              <ContactButton label="Gmail" href="mailto:maginfinity222@gmail.com?subject=Запись на консультацию" />
             </div>
 
             <div className="pt-10 text-[10px] text-zinc-600 uppercase tracking-[0.3em]">

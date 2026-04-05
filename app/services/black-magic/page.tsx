@@ -4,7 +4,7 @@ export default function BlackMagicPage() {
   return (
     <div className="min-h-screen bg-[#050505]"> 
       
-      <div className="relative w-full h-[60vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
+      <div className="centre w-full h-[60vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
         <Image
           src="/images/black-magic-hero.webp"
           alt="Черная магия — Mag Infinite"
