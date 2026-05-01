@@ -4,20 +4,21 @@ export default function DivinationPage() {
   return (
     <div className="min-h-screen bg-[#050505]">
       
-      <div className="centre w-full h-[10vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
+      <div className="relative w-full h-[50vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
         <Image
           src="/images/divination-hero.webp" 
-          alt="Ясновидение и прорицание — Mag Infinite"
+          alt="Ясновидение и прорицание — Ruslan Infinity"
           fill
           priority
-          className="object-cover object-center opacity-80" 
+          className="object-cover object-center opacity-70" 
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
-        
-        <div className="relative z-10 flex items-end justify-center h-full pb-16">
-          <h1 className="text-4xl md:text-5xl font-serif tracking-[0.3em] text-white uppercase text-center px-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/40 to-[#050505]"></div>
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full pt-10">
+          <h1 className="text-3xl md:text-5xl font-serif tracking-[0.3em] text-white uppercase text-center px-6 leading-tight">
             Ясновидение
           </h1>
+          <div className="w-12 h-px bg-accent-red/40 mt-4 md:hidden"></div>
         </div>
       </div>
 
@@ -30,7 +31,7 @@ export default function DivinationPage() {
             <span className="inline-block text-5xl md:text-7xl font-serif text-white leading-[0] mr-1 translate-y-[6px]">
               П
             </span>
-            рорицание на картах Таро представляет собой одну из самых сильных форм ясновидения, 
+            рорицание на картах таро представляет собой одну из самых сильных форм ясновидения, 
             подвластную лишь мастеру высших ступеней развития. Это магический ритуал, 
             позволяющий провести и донести информацию через темную сторону подсознания к 
             сверхсознанию человека. Моя задача — подсказать путь, основываясь на прошлом 
@@ -40,7 +41,7 @@ export default function DivinationPage() {
           <div className="py-12 flex flex-col items-center text-center space-y-6">
             <div className="w-8 h-px bg-zinc-800"></div>
             <blockquote className="text-2xl font-serif italic text-white max-w-lg tracking-widest">
-              "Маги не гадают! Маги Творят... Видят сквозь время... Прорицают!"
+              "Маги не гадают! Маги творят... Видят сквозь время... Прорицают!"
             </blockquote>
             <div className="w-8 h-px bg-zinc-800"></div>
           </div>
