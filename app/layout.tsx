@@ -4,7 +4,7 @@ import Header from './components/Header'
 
 export const metadata: Metadata = {
   title: 'Mag Infinite',
-  description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации в Одессе и онлайн.',
+  description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации онлайн.',
 }
 
 export default function RootLayout({
