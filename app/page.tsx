@@ -129,7 +129,7 @@ export default function HomePage() {
             />
             <ServiceCard 
               title="Ясновидение" 
-              desc="Глубокий анализ судьбы через Таро для упреждения опасностей и выбора верного пути."
+              desc="Глубокий анализ судьбы через таро для упреждения опасностей и выбора верного пути."
               link="/services/divination" 
             />
             <ServiceCard 

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Header from './components/Header'
 
 export const metadata: Metadata = {
-  title: 'Mag Infinite',
+  title: 'Magikian herald',
   description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации онлайн.',
 }
 
@@ -42,14 +42,14 @@ export default function RootLayout({
             <div className="space-y-4">
               <h2 className="text-3xl font-serif tracking-[0.4em] text-white uppercase">Контакты</h2>
               <p className="text-xs text-zinc-500 uppercase tracking-widest italic">
-                Работаю как дистанционно, так и очно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю. Оплата производится по договоренности с клиентом за конкретную магическую услугу: часть — в начале работы, остальное — по её завершении.
+                Работаю дистанционно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично, секретаря не имею. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю.
               </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto px-4">
-              <ContactButton label="Telegram" href="https://t.me/+380663617631" />
-              <ContactButton label="WhatsApp" href="https://wa.me/380663617631" />
-              <ContactButton label="Viber" href="viber://chat?number=%2B380663617631" />
+              <ContactButton label="Telegram" href="https://t.me/+380956559205" />
+              <ContactButton label="WhatsApp" href="https://wa.me/380956559205" />
+              <ContactButton label="Viber" href="viber://chat?number=%2B380956559205" />
               <ContactButton label="Gmail" href="mailto:maginfinity222@gmail.com?subject=Запись на консультацию" />
             </div>
 
