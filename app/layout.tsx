@@ -50,7 +50,7 @@ export default function RootLayout({
               <ContactButton label="Telegram" href="https://t.me/+380956559205" />
               <ContactButton label="WhatsApp" href="https://wa.me/380956559205" />
               <ContactButton label="Viber" href="viber://chat?number=%2B380956559205" />
-              <ContactButton label="Gmail" href="mailto:maginfinity222@gmail.com?subject=Запись на консультацию" />
+              <ContactButton label="Gmail" href="mailto:r83562392@gmail.com?subject=Запись на консультацию" />
             </div>
 
             <div className="pt-10 text-[10px] text-zinc-600 uppercase tracking-[0.3em]">
