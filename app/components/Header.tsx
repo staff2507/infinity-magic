@@ -26,8 +26,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-zinc-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center relative z-50">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-zinc-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center relative">
         
         <Link 
           href="/" 
@@ -39,7 +39,7 @@ export default function Header() {
 
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none z-50"
+          className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none"
           aria-label="Открыть меню"
         >
           <span className={`absolute w-6 h-px bg-white transition-all duration-300 ${
@@ -54,18 +54,19 @@ export default function Header() {
         </button>
             
         <div className={`
-          ${isOpen ? 'fixed inset-0 pt-24 bg-black/98 flex' : 'hidden md:flex'} 
-          md:static w-full md:w-auto 
+          ${isOpen ? 'flex' : 'hidden md:flex'} 
+          absolute md:static top-full left-0 w-full md:w-auto 
           flex-col md:flex-row 
-          items-center justify-start md:justify-end
-          gap-8 md:gap-0 md:space-x-8 
+          items-center 
+          gap-6 md:gap-0 md:space-x-8 
           p-8 md:p-0 
-          text-sm md:text-[10px] uppercase tracking-[0.2em]
-          z-40 transition-all duration-300
+          bg-black md:bg-transparent 
+          border-b md:border-none border-zinc-900
+          text-[11px] sm:text-[10px] uppercase tracking-[0.2em]
         `}>
-          <Link href="/" onClick={(e) => { scrollToTop(e); setIsOpen(false); }} className="hover:text-white transition py-4 md:py-0 w-full md:w-auto text-center border-b border-zinc-900/50 md:border-none">Главная</Link>
-          <Link href="/#services" onClick={(e) => { scrollToSection(e, 'services'); setIsOpen(false); }} className="hover:text-white transition py-4 md:py-0 w-full md:w-auto text-center border-b border-zinc-900/50 md:border-none">Услуги</Link>
-          <Link href="#contacts" onClick={(e) => { scrollToSection(e, 'contacts'); setIsOpen(false); }} className="hover:text-white transition py-4 md:py-0 w-full md:w-auto text-center">Контакты</Link>
+          <Link href="/" onClick={(e) => { scrollToTop(e); setIsOpen(false); }} className="hover:text-white transition py-2 md:py-0 w-full md:w-auto text-center">Главная</Link>
+          <Link href="/#services" onClick={(e) => { scrollToSection(e, 'services'); setIsOpen(false); }} className="hover:text-white transition py-2 md:py-0 w-full md:w-auto text-center">Услуги</Link>
+          <Link href="#contacts" onClick={(e) => { scrollToSection(e, 'contacts'); setIsOpen(false); }} className="hover:text-white transition py-2 md:py-0 w-full md:w-auto text-center">Контакты</Link>
         </div>
       </div>
     </nav>
