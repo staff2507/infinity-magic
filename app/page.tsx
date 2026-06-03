@@ -163,8 +163,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="bg-red-950/5 p-6 sm:p-8 text-center border border-red-950/10">
-            <p className="text-zinc-400 text-[11px] sm:text-xs leading-loose font-light italic max-w-2xl mx-auto">
+          <div className="bg-red-950/5 p-6 sm:p-8 text-center border border-red-950/10 space-y-4">
+            <p className="text-white text-xs sm:text-sm tracking-wide font-serif italic max-w-2xl mx-auto">
+              «В процессе всей работы я подбираю "ключики" по вашему запросу и по завершению надежно запечатываю на "замок" достигнутый результат!»
+            </p>
+            <p className="text-zinc-500 text-[10px] sm:text-xs leading-loose font-light max-w-2xl mx-auto pt-2 border-t border-zinc-900/50">
               Я веду и консультирую вас на протяжении всего пути. Оплата производится единожды — без скрытых расходов на атрибутику. Помните: мастер требует уважения не к себе, а к силе, через которую он действует во благо людей.
             </p>
           </div>
