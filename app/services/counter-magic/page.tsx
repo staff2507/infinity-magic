@@ -1,6 +1,12 @@
+'use client'
+import { useEffect } from 'react'
 import Image from 'next/image'
 
 export default function CounterMagicPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="min-h-screen bg-[#050505] break-words overflow-x-hidden">
 
@@ -16,7 +22,7 @@ export default function CounterMagicPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
 
         <div className="relative z-10 flex items-end justify-center h-full pb-12 sm:pb-16 md:pb-20">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase text-center px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase text-center px-4">
             Магия и контрмагия
           </h1>
         </div>
@@ -43,7 +49,7 @@ export default function CounterMagicPage() {
           <div className="py-6 sm:py-12 flex flex-col items-center text-center space-y-4 sm:space-y-6">
             <div className="text-base sm:text-xl md:text-2xl font-serif italic text-zinc-200 max-w-lg tracking-wider sm:tracking-widest leading-relaxed px-2">
               "Око за око, зуб за зуб. Профессионалы называют это красной магией — 
-              высшей справедливостью в ответ на магическую агрессию."
+              высшей справедливостью в ответ на магическую aggression."
             </div>
           </div>
 
@@ -58,11 +64,11 @@ export default function CounterMagicPage() {
 
           <div className="pt-8 sm:pt-10 grid gap-6 sm:gap-8 border-t border-zinc-900">
             <div className="space-y-2">
-              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-red-900/80">Диагностика агрессии</h3>
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-[#c5a880]/90">Диагностика агрессии</h3>
               <p className="text-xs sm:text-sm text-zinc-500 italic">Выявление источника магической атаки и её реальной силы.</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-red-900/80">Магическое сопровождение</h3>
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-[#c5a880]/90">Магическое сопровождение</h3>
               <p className="text-xs sm:text-sm text-zinc-500 italic">Защита проектов и решение закулисных аспектов в бизнесе и личной сфере.</p>
             </div>
           </div>

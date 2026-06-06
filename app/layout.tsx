@@ -30,8 +30,8 @@ export default function RootLayout({
 
         <footer id="contacts" className="relative mt-20 py-24 border-t border-zinc-900 overflow-hidden">
           <div 
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-20" 
-            style={{ backgroundImage: 'url("/branches.jpg")' }} 
+            className="absolute inset-0 z-0 bg-cover bg-center opacity-10" 
+            style={{ backgroundImage: 'url("/images/contacts.webp")' }} 
           ></div>
 
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#050505] via-transparent to-[#050505]"></div>
@@ -40,9 +40,9 @@ export default function RootLayout({
             <div className="w-16 h-px bg-zinc-700 mx-auto"></div>
             
             <div className="space-y-4">
-              <h2 className="text-3xl font-serif tracking-[0.4em] text-white uppercase">Контакты</h2>
+              <h2 className="text-3xl font-serif tracking-[0.4em] text-emerald-600 uppercase">Контакты</h2>
               <h2 className="text-1xl font-serif tracking-[0.4em] text-white uppercase">Mag Herald</h2>
-              <p className="text-xs text-zinc-500 uppercase tracking-widest italic">
+              <p className="text-xs text-zinc-500 uppercase tracking-widest italic leading-relaxed max-w-3xl mx-auto px-4">
                 Работаю дистанционно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю. В чрезвычайных ситуациях, где от мастера требуется креативность,есть возможность подключения группы мастеров для усиления и достижения задуманной цели.
               </p>
             </div>
@@ -71,7 +71,7 @@ function ContactButton({ label, href }: { label: string, href: string }) {
       href={href} 
       target="_blank" 
       rel="noopener noreferrer"
-      className="border border-zinc-800 p-4 text-[10px] uppercase tracking-widest text-zinc-400 hover:border-white hover:text-white transition-all duration-500 text-center flex items-center justify-center bg-black/40 backdrop-blur-sm"
+      className="border border-zinc-800 p-4 text-[10px] uppercase tracking-widest text-zinc-400 hover:border-white hover:text-white transition-all duration-500 text-center flex items-center justify-center bg-black/60 backdrop-blur-sm"
     >
       {label}
     </a>

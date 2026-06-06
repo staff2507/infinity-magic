@@ -1,6 +1,12 @@
+'use client'
+import { useEffect } from 'react'
 import Image from 'next/image'
 
 export default function ProtectionPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="min-h-screen bg-[#050505] break-words overflow-x-hidden">
       
@@ -16,7 +22,7 @@ export default function ProtectionPage() {
         
         <div className="relative z-10 flex items-end justify-center h-full pb-12 sm:pb-16 md:pb-20">
           <div className="text-center px-4">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase mb-3 sm:mb-4">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase mb-3 sm:mb-4">
               Порча и защита
             </h1>
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] sm:tracking-[0.6em] text-zinc-500 uppercase font-light">
@@ -72,11 +78,11 @@ export default function ProtectionPage() {
 
           <div className="pt-8 sm:pt-10 grid gap-6 sm:gap-8 border-t border-zinc-900">
             <div className="space-y-2">
-              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-accent-red/80">Личный щит</h3>
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-[#c5a880]/90">Личный щит</h3>
               <p className="text-xs sm:text-sm text-zinc-500 italic">Постановка постоянной защиты от сглаза, порчи и магического крадника удачи.</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-accent-red/80">Очищение пространства</h3>
+              <h3 className="text-white text-xs uppercase tracking-widest font-semibold text-[#c5a880]/90">Очищение пространства</h3>
               <p className="text-xs sm:text-sm text-zinc-500 italic">Изгнание застойных энергий и создание «места силы» внутри вашего дома или офиса.</p>
             </div>
           </div>

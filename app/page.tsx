@@ -10,7 +10,7 @@ export default function HomePage() {
         <div className="relative z-10 flex flex-col items-center w-full px-4">
           <div className="w-[1px] h-12 sm:h-20 bg-gradient-to-b from-transparent via-red-900/50 to-zinc-700 mb-6 sm:mb-8 animate-bounce-slow"></div>
           
-          <h1 className="text-3xl sm:text-4xl md:text-7xl font-serif text-white tracking-tight leading-tight mb-6 hyphens-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-7xl font-serif text-[#c5a880] tracking-tight leading-tight mb-6 hyphens-auto">
             Древние знания <br /> 
             <span className="text-zinc-500 italic">в современном мире</span>
           </h1>
@@ -33,8 +33,8 @@ export default function HomePage() {
         <div className="space-y-6 sm:space-y-8">
           <div className="w-px h-12 bg-gradient-to-b from-transparent to-red-950/60 mx-auto"></div>
           
-          <div className="max-w-2xl mx-auto">
-            <p className="text-zinc-400 text-xs sm:text-sm md:text-base leading-relaxed font-light italic px-2">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose font-light italic px-2">
               «Магия и религия довольно своеобразны и имеют свои правила. Каждый человек имеет право верить во что-то свое. Кто-то христианин, мусульманин, другие же верят в магию. Это работает по одному принципу, магия — более универсальный продукт для каждой культуры и народа».
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function HomePage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-12 sm:space-y-16">
         <div className="text-center space-y-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880]">
             Обо мне
           </h2>
           <div className="w-12 h-px bg-red-950/50 mx-auto"></div>
@@ -67,8 +67,8 @@ export default function HomePage() {
           <div className="space-y-4 sm:space-y-6">
             <p>
               Мне, как опытному мастеру, дано изучить ситуацию человека и при необходимости 
-              повлиять на нее. В процессе общения мне дано выявить следствие и установить 
-              причину в сложившейся ситуации. Работа ведется строго онлайн по видеосвязи, 
+              полиять на нее. В процессе общения мне дано выявить следствие и установить 
+              причину в сложившейся ситуации. Работа ведется строго онлайн по videoсвязи, 
               что гарантирует порядочность и соблюдение кодекса чести мастера.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function HomePage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-12 sm:space-y-16">
         <div className="text-center space-y-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880]">
             Принципы моей работы
           </h2>
           <div className="w-12 h-px bg-red-950/50 mx-auto"></div>
@@ -145,7 +145,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 px-4 sm:px-6">
           <div className="text-center">
             <h2 className="text-xs uppercase tracking-[0.4em] sm:tracking-[0.6em] text-zinc-600 mb-2 sm:mb-4">Методология</h2>
-            <p className="text-xl sm:text-2xl font-serif text-white italic">Порядок ведения практики</p>
+            <p className="text-xl sm:text-2xl font-serif text-[#c5a880] italic">Порядок ведения практики</p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-10 sm:gap-y-12">
@@ -158,16 +158,16 @@ export default function HomePage() {
               <div key={i} className="group space-y-3 sm:space-y-4">
                 <span className="text-zinc-900 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">{step.num}</span>
                 <h3 className="text-white text-xs sm:text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">{step.title}</h3>
-                <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed font-light">{step.text}</p>
+                <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">{step.text}</p>
               </div>
             ))}
           </div>
 
           <div className="bg-red-950/5 p-6 sm:p-8 text-center border border-red-950/10 space-y-4">
-            <p className="text-white text-xs sm:text-sm tracking-wide font-serif italic max-w-2xl mx-auto">
+            <p className="text-[#c5a880] text-sm sm:text-base md:text-lg tracking-wide font-serif italic max-w-2xl mx-auto leading-relaxed">
               «В процессе всей работы я подбираю "ключики" по вашему запросу и по завершению надежно запечатываю на "замок" достигнутый результат!»
             </p>
-            <p className="text-zinc-500 text-[10px] sm:text-xs leading-loose font-light max-w-2xl mx-auto pt-2 border-t border-zinc-900/50">
+            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed font-light max-w-2xl mx-auto pt-4 border-t border-zinc-900/50">
               Я веду и консультирую вас на протяжении всего пути. Оплата производится единожды — без скрытых расходов на атрибутику. Помните: мастер требует уважения не к себе, а к силе, через которую он действует во благо людей.
             </p>
           </div>
@@ -183,16 +183,19 @@ function ServiceCard({ title, desc, link }: { title: string, desc: string, link:
     <div className="bg-[#050505] p-8 sm:p-10 md:p-14 group hover:bg-[#0a0505] transition-all duration-700 flex flex-col h-full border-zinc-900/50 hover:border-red-900/20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-tr from-red-950/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-      <h3 className="text-base sm:text-lg text-white font-serif mb-4 sm:mb-5 group-hover:text-red-100/90 transition-colors tracking-widest uppercase italic relative z-10">
+      <h3 className="text-base sm:text-lg text-white font-serif mb-4 sm:mb-5 group-hover:text-[#c5a880] transition-colors tracking-widest uppercase italic relative z-10">
         {title}
       </h3>
       
-      <p className="text-zinc-500 text-xs sm:text-sm mb-8 sm:mb-10 leading-relaxed font-light flex-grow relative z-10">
+      <p className="text-zinc-400 text-sm leading-relaxed font-light mb-8 sm:mb-10 flex-grow relative z-10">
         {desc}
       </p>
       
       <div className="relative z-10">
-        <Link href={link} className="text-[9px] uppercase tracking-[0.3em] text-zinc-400 border-b border-zinc-800 pb-1 group-hover:text-red-200/70 group-hover:border-red-900/50 transition-all duration-500">
+        <Link 
+          href={link} 
+          className="text-[9px] uppercase tracking-[0.3em] text-zinc-400 border-b border-zinc-800 pb-1 group-hover:text-[#c5a880] group-hover:border-[#c5a880]/40 transition-all duration-500"
+        >
           Подробнее
         </Link>
       </div>

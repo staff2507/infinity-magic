@@ -1,6 +1,12 @@
+'use client'
+import { useEffect } from 'react'
 import Image from 'next/image'
 
 export default function DivinationPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="min-h-screen bg-[#050505] break-words overflow-x-hidden">
       
@@ -15,7 +21,7 @@ export default function DivinationPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/40 to-[#050505]"></div>
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-10">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase text-center px-4 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase text-center px-4 leading-tight">
             Ясновидение
           </h1>
           <div className="w-12 h-px bg-accent-red/40 mt-4 md:hidden"></div>

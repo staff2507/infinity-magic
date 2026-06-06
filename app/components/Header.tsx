@@ -32,7 +32,7 @@ export default function Header() {
         <Link 
           href="/" 
           onClick={scrollToTop}
-          className="text-lg sm:text-xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer truncate max-w-[70%]"
+          className="text-lg sm:text-xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer truncate max-w-[70%]"
         >
           Magikian herald
         </Link>
@@ -42,13 +42,13 @@ export default function Header() {
           className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none"
           aria-label="Открыть меню"
         >
-          <span className={`absolute w-6 h-px bg-white transition-all duration-300 ${
+          <span className={`absolute w-6 h-px bg-[#c5a880] transition-all duration-300 ${
             isOpen ? 'rotate-45' : '-translate-y-2'
           }`}></span>
-          <span className={`absolute w-6 h-px bg-white transition-all duration-300 ${
+          <span className={`absolute w-6 h-px bg-[#c5a880] transition-all duration-300 ${
             isOpen ? 'opacity-0' : 'opacity-100'
           }`}></span>
-          <span className={`absolute w-6 h-px bg-white transition-all duration-300 ${
+          <span className={`absolute w-6 h-px bg-[#c5a880] transition-all duration-300 ${
             isOpen ? '-rotate-45' : 'translate-y-2'
           }`}></span>
         </button>
