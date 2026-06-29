@@ -12,10 +12,10 @@ export default function HomePage() {
           
           <h1 className="text-3xl sm:text-4xl md:text-7xl font-serif text-[#c5a880] tracking-tight leading-tight mb-6 hyphens-auto">
             Древние знания <br /> 
-            <span className="text-zinc-500 italic">в современном мире</span>
+            <span className="text-[#c5a880] italic">в современном мире</span>
           </h1>
           
-          <p className="max-w-xl text-zinc-500 text-xs sm:text-sm md:text-base leading-relaxed tracking-wide uppercase px-2">
+          <p className="max-w-xl text-[#680606] text-xs sm:text-sm md:text-base leading-relaxed tracking-wide uppercase px-2">
             Практикующая помощь в решении сложных жизненных ситуаций, <br className="hidden sm:inline" />
             обретении гармонии и защите вашего будущего.
           </p>
@@ -34,7 +34,7 @@ export default function HomePage() {
           <div className="w-px h-12 bg-gradient-to-b from-transparent to-red-950/60 mx-auto"></div>
           
           <div className="max-w-3xl mx-auto">
-            <p className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose font-light italic px-2">
+            <p className="text-[#680606] text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose font-light italic px-2">
               «Магия и религия довольно своеобразны и имеют свои правила. Каждый человек имеет право верить во что-то свое. Кто-то христианин, мусульманин, другие же верят в магию. Это работает по одному принципу, магия — более универсальный продукт для каждой культуры и народа».
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
               { num: "01", title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
               { num: "02", title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
               { num: "03", title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
-              { num: "04", title: "Закрепление", text: "Постановка мощной защиты на result. Скрытие работы от сторонних глаз и других мастеров." },
+              { num: "04", title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
             ].map((step, i) => (
               <div key={i} className="group space-y-3 sm:space-y-4">
                 <span className="text-zinc-900 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">{step.num}</span>
@@ -183,7 +183,8 @@ function ServiceCard({ title, desc, link }: { title: string, desc: string, link:
     <div className="bg-[#050505] p-8 sm:p-10 md:p-14 group hover:bg-[#0a0505] transition-all duration-700 flex flex-col h-full border-zinc-900/50 hover:border-red-900/20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-tr from-red-950/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-      <h3 className="text-base sm:text-lg text-white font-serif mb-4 sm:mb-5 group-hover:text-[#c5a880] transition-colors tracking-widest uppercase italic relative z-10">
+      {/* Изменили text-white на text-[#c5a880] и убрали эффекты ховера */}
+      <h3 className="text-base sm:text-lg text-[#c5a880] font-serif mb-4 sm:mb-5 tracking-widest uppercase italic relative z-10">
         {title}
       </h3>
       
