@@ -126,7 +126,7 @@ export default function HomePage() {
             <h2 className="text-sm uppercase tracking-[0.4em] sm:tracking-[0.6em] text-zinc-500">Направления практики</h2>
           </div>
 
-          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-px bg-zinc-900/30 border border-zinc-900/30 shadow-[0_0_50px_rgba(127,17,17,0.05)]">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-1 gap-px bg-zinc-900/30 border border-zinc-900/30 shadow-[0_0_50px_rgba(127,17,17,0.05)]">
             <ServiceCard 
               title="Любовная магия" 
               desc="Гармонизация отношений, возвращение утраченных чувств и защита семейного очага."
