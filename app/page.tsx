@@ -184,18 +184,25 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 gap-y-10 sm:gap-y-12">
             {[
-              { title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
-              { title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
-              { title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
-              { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
-            ].map((step, i) => (
-              <div key={i} className="group space-y-3 sm:space-y-4">
-                <span className="text-zinc-800 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">{step.num}</span>
-                <h3 className="text-white text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">{step.title}</h3>
-                <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">{step.text}</p>
-              </div>
-            ))}
-          </div>
+                { title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
+                { title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
+                { title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
+                { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
+              ].map((step, i) => (
+                <div key={i} className="group space-y-3 sm:space-y-4">
+                  {/* Здесь мы выводим номер через индекс, step.num больше нигде не упоминается */}
+                  <span className="text-zinc-800 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">
+                    0{i + 1}
+                  </span>
+                  <h3 className="text-white text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">
+                    {step.text}
+                  </p>
+                </div>
+              ))}
+            </div>
 
           <div className="bg-red-950/5 p-6 sm:p-8 text-center border border-red-950/10 space-y-4">
             <p className="text-[#c5a880] text-sm sm:text-base md:text-lg tracking-wide font-serif italic max-w-2xl mx-auto leading-relaxed">
