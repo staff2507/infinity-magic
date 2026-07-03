@@ -29,7 +29,6 @@ export default function HomePage() {
             <span className="text-[#c5a880] italic">в современном мире</span>
           </h1>
           
-          {/* Сделали бардовый текст ярким, сочным и читаемым (text-red-500) */}
           <p className="max-w-xl text-red-500 text-sm sm:text-base leading-relaxed tracking-wide uppercase px-2 font-medium">
             Практикующая помощь в решении сложных жизненных ситуаций, <br className="hidden sm:inline" />
             обретении гармонии и защите вашего будущего.
@@ -49,10 +48,12 @@ export default function HomePage() {
         <div className="space-y-6 sm:space-y-8">
           <div className="w-px h-12 bg-gradient-to-b from-transparent to-red-950/60 mx-auto"></div>
           
-          <div className="max-w-3xl mx-auto">
-            {/* Сделали бардовую цитату контрастной и светящейся (text-red-400) */}
+          <div className="max-w-3xl mx-auto space-y-6">
             <p className="text-red-400 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose font-light italic px-2">
               «Магия и религия довольно своеобразны и имеют свои правила. Каждый человек имеет право верить во что-то свое. Кто-то христианин, мусульманин, другие же верят в магию. Это работает по одному принципу, магия — более универсальный продукт для каждой культуры и народа».
+            </p>
+            <p className="text-red-400/90 text-sm sm:text-base md:text-lg leading-relaxed font-light italic px-4 pt-4 border-t border-zinc-900/40">
+              «Магия есть искусство управления сознанием и энергией, стирающее границу между возможным и невозможным».
             </p>
           </div>
 
@@ -73,20 +74,26 @@ export default function HomePage() {
           <div className="w-12 h-px bg-red-950/50 mx-auto"></div>
         </div>
 
+        <div className="max-w-3xl mx-auto text-center mb-8">
+          <p className="text-red-400 text-sm sm:text-base leading-relaxed italic">
+            «Мастера должны всегда учить тому, что лучше и наиболее удобно для каждого, в соответствии с его состоянием бытия и его относительным духовным развитием».
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 text-zinc-400 leading-relaxed tracking-wide font-light text-sm sm:text-base">
           <div className="space-y-4 sm:space-y-6">
             <p>
               Тайные учения и доступ к знаниям переданы мне по роду. Я потомственный колдун, 
               владею сокровенными знаниями, переданными мне предками. Моей миссией, исходя 
-              из опыта более двадцати лет, является совершенствование и practical 
+              из опыта более двадцати лет, является совершенствование и практическое 
               колдовское применение этих знаний в работе.
             </p>
           </div>
           <div className="space-y-4 sm:space-y-6">
             <p>
               Мне, как опытному мастеру, дано изучить ситуацию человека и при необходимости 
-              полиять на нее. В процессе общения мне дано выявить следствие и установить 
-              причину в сложившейся ситуации. Работа ведется строго онлайн по videoсвязи, 
+              повлиять на нее. В процессе общения мне дано выявить следствие и установить 
+              причину в сложившейся ситуации. Работа ведется строго онлайн по видеосвязи, 
               что гарантирует порядочность и соблюдение кодекса чести мастера.
             </p>
           </div>
@@ -119,14 +126,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Направления */}
+      {/* Направления (Изменено на lg:grid-cols-1 для отображения в один столбик на ПК) */}
       <section id="services" className="py-20 sm:py-32 bg-[#050505]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
           <div className="text-center">
             <h2 className="text-sm uppercase tracking-[0.4em] sm:tracking-[0.6em] text-zinc-500">Направления практики</h2>
           </div>
 
-          <div className="grid sm:grid-cols-1 lg:grid-cols-1 gap-px bg-zinc-900/30 border border-zinc-900/30 shadow-[0_0_50px_rgba(127,17,17,0.05)]">
+          <div className="grid grid-cols-1 gap-y-px bg-zinc-900/30 border border-zinc-900/30 shadow-[0_0_50px_rgba(127,17,17,0.05)]">
             <ServiceCard 
               title="Любовная магия" 
               desc="Гармонизация отношений, возвращение утраченных чувств и защита семейного очага."
@@ -138,7 +145,7 @@ export default function HomePage() {
               link="/services/business-help" 
             />
             <ServiceCard 
-              title="Черная магия" 
+              title="Черная магия и колдовство" 
               desc="Работа с глубокими энергиями. Проведение серьезных обрядов для решения критических ситуаций."
               link="/services/black-magic" 
             />
@@ -161,7 +168,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Методология */}
       <section className="py-16 sm:py-24 border-t border-zinc-900 bg-gradient-to-b from-[#050505] to-[#080303]">
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 px-4 sm:px-6">
           <div className="text-center">
@@ -169,12 +175,19 @@ export default function HomePage() {
             <p className="text-xl sm:text-2xl font-serif text-[#c5a880] italic">Порядок ведения практики</p>
           </div>
 
-          <div className="grid sm:grid-cols-1 gap-x-8 md:gap-x-16 gap-y-10 sm:gap-y-12">
+          {/* Цитата из центра фото (над свитками) */}
+          <div className="max-w-2xl mx-auto text-center bg-zinc-950/30 p-4 border-l-2 border-red-900/50">
+            <p className="text-red-400 text-xs sm:text-sm leading-relaxed italic">
+              «Мой совет ищущим истину — осознать необходимость очищения своего существования, освободив себя от всего, что нарушает их покой и свободу ума».
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-y-10 sm:gap-y-12">
             {[
-              { num: "01", title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
-              { num: "02", title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
-              { num: "03", title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
-              { num: "04", title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
+              { title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
+              { title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
+              { title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
+              { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
             ].map((step, i) => (
               <div key={i} className="group space-y-3 sm:space-y-4">
                 <span className="text-zinc-800 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">{step.num}</span>

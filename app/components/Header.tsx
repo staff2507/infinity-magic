@@ -29,12 +29,18 @@ export default function Header() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center relative">
         
+        {/* Обновленный логотип с подзаголовком */}
         <Link 
           href="/" 
           onClick={scrollToTop}
-          className="text-lg sm:text-xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase hover:opacity-70 transition-opacity duration-300 cursor-pointer truncate max-w-[70%]"
+          className="flex flex-col hover:opacity-70 transition-opacity duration-300 cursor-pointer max-w-[80%] sm:max-w-none"
         >
-          Magikian herald
+          <span className="text-lg sm:text-xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase">
+            Magikian herald
+          </span>
+          <span className="text-[9px] sm:text-[11px] font-serif tracking-widest text-[#a855f7] mt-1 italic">
+            Qui cognovit arcanum cogitationis, is tenet filum orbium nexus.
+          </span>
         </Link>
 
         <button 
