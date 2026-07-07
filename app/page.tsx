@@ -155,7 +155,7 @@ export default function HomePage() {
               link="/services/protection" 
             />
             <ServiceCard 
-              title="Магия предсказаний и прорецаний" 
+              title="Магия предсказаний и прорицаний" 
               desc="Глубокий анализ судьбы через таро для упреждения опасностей и выбора верного пути."
               link="/services/divination" 
             />
@@ -190,7 +190,6 @@ export default function HomePage() {
               { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
             ].map((step, i) => (
               <div key={i} className="group space-y-3 sm:space-y-4">
-                {/* Номера 01, 02 и т.д. успешно удалены отсюда */}
                 <h3 className="text-[#c5a880] text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">
                   {step.title}
                 </h3>
