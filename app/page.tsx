@@ -126,7 +126,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Направления (Изменено на lg:grid-cols-1 для отображения в один столбик на ПК) */}
+      {/* Направления */}
       <section id="services" className="py-20 sm:py-32 bg-[#050505]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
           <div className="text-center">
@@ -140,7 +140,7 @@ export default function HomePage() {
               link="/services/love-magic" 
             />
             <ServiceCard 
-              title="Бизнес и успех" 
+              title="Магия процветания и коммерции" 
               desc="Коррекция финансовых потоков, устранение препятствий в делах и поддержка начинаний."
               link="/services/business-help" 
             />
@@ -155,7 +155,7 @@ export default function HomePage() {
               link="/services/protection" 
             />
             <ServiceCard 
-              title="Ясновидение" 
+              title="Магия предсказаний и прорецаний" 
               desc="Глубокий анализ судьбы через таро для упреждения опасностей и выбора верного пути."
               link="/services/divination" 
             />
@@ -168,6 +168,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Методология */}
       <section className="py-16 sm:py-24 border-t border-zinc-900 bg-gradient-to-b from-[#050505] to-[#080303]">
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 px-4 sm:px-6">
           <div className="text-center">
@@ -175,7 +176,6 @@ export default function HomePage() {
             <p className="text-xl sm:text-2xl font-serif text-[#c5a880] italic">Порядок ведения практики</p>
           </div>
 
-          {/* Цитата из центра фото (над свитками) */}
           <div className="max-w-2xl mx-auto text-center bg-zinc-950/30 p-4 border-l-2 border-red-900/50">
             <p className="text-red-400 text-xs sm:text-sm leading-relaxed italic">
               «Мой совет ищущим истину — осознать необходимость очищения своего существования, освободив себя от всего, что нарушает их покой и свободу ума».
@@ -184,25 +184,22 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 gap-y-10 sm:gap-y-12">
             {[
-                { title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
-                { title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
-                { title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
-                { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
-              ].map((step, i) => (
-                <div key={i} className="group space-y-3 sm:space-y-4">
-                  {/* Здесь мы выводим номер через индекс, step.num больше нигде не упоминается */}
-                  <span className="text-zinc-800 group-hover:text-red-950/40 transition-colors duration-500 font-serif text-4xl sm:text-5xl block">
-                    0{i + 1}
-                  </span>
-                  <h3 className="text-white text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">
-                    {step.text}
-                  </p>
-                </div>
-              ))}
-            </div>
+              { title: "Диагностика", text: "Детальное изучение проблемы и просмотр ситуации. Выявление магических воздействий и скрытых угроз." },
+              { title: "Очищение", text: "Снятие сторонних защит недруга, нейтрализация негативных энергий. Подготовка почвы для работы." },
+              { title: "Воздействие", text: "Проведение основных обрядов. Работа ведется до получения устойчивого и видимого результата." },
+              { title: "Закрепление", text: "Постановка мощной защиты. Скрытие работы от сторонних глаз и других мастеров." },
+            ].map((step, i) => (
+              <div key={i} className="group space-y-3 sm:space-y-4">
+                {/* Номера 01, 02 и т.д. успешно удалены отсюда */}
+                <h3 className="text-[#c5a880] text-sm uppercase tracking-widest border-b border-zinc-900 group-hover:border-red-900/30 transition-colors duration-500 pb-2">
+                  {step.title}
+                </h3>
+                <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
 
           <div className="bg-red-950/5 p-6 sm:p-8 text-center border border-red-950/10 space-y-4">
             <p className="text-[#c5a880] text-sm sm:text-base md:text-lg tracking-wide font-serif italic max-w-2xl mx-auto leading-relaxed">
@@ -224,7 +221,7 @@ function ServiceCard({ title, desc, link }: { title: string, desc: string, link:
     <div className="bg-[#050505] p-8 sm:p-10 md:p-14 group hover:bg-[#0a0505] transition-all duration-700 flex flex-col h-full border-zinc-900/50 hover:border-red-900/20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-tr from-red-950/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-      <h3 className="text-base sm:text-lg text-[#c5a880] font-serif mb-4 sm:mb-5 tracking-widest uppercase italic relative z-10">
+      <h3 className="text-base sm:text-lg text-[#c5a880] group-hover:text-[#754a0d] font-serif mb-4 sm:mb-5 tracking-widest uppercase italic relative z-10 transition-all duration-500">
         {title}
       </h3>
       
@@ -235,7 +232,7 @@ function ServiceCard({ title, desc, link }: { title: string, desc: string, link:
       <div className="relative z-10">
         <Link 
           href={link} 
-          className="text-xs uppercase tracking-[0.3em] text-zinc-400 border-b border-zinc-800 pb-1 group-hover:text-[#c5a880] group-hover:border-[#c5a880]/40 transition-all duration-500"
+          className="text-xs uppercase tracking-[0.3em] text-zinc-400 border-b border-zinc-800 pb-1 group-hover:text-emerald-600 group-hover:border-[#c5a880]/40 transition-all duration-500"
         >
           Подробнее
         </Link>

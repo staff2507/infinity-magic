@@ -13,7 +13,7 @@ export default function DivinationPage() {
       <div className="relative w-full h-[50vh] md:h-[70vh] border-b border-zinc-900 overflow-hidden">
         <Image
           src="/images/divination-hero.webp" 
-          alt="Ясновидение и прорицание — Ruslan Infinity"
+          alt="Магия предсказаний и прорецаний — Ruslan Infinity"
           fill
           priority
           className="object-cover opacity-70" 
@@ -22,7 +22,7 @@ export default function DivinationPage() {
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-10">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase text-center px-4 leading-tight">
-            Ясновидение
+            Магия предсказаний и прорецаний
           </h1>
           <div className="w-12 h-px bg-accent-red/40 mt-4 md:hidden"></div>
         </div>

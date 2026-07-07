@@ -13,7 +13,7 @@ export default function BusinessHelpPage() {
       <div className="relative w-full h-[50vh] md:h-[75vh] border-b border-zinc-900 overflow-hidden">
         <Image
           src="/images/business-hero.webp" 
-          alt="Бизнес и успех — Ruslan Infinity"
+          alt="Магия процветания и коммерции — Ruslan Infinity"
           fill
           priority
           className="object-cover opacity-70" 
@@ -24,7 +24,7 @@ export default function BusinessHelpPage() {
         <div className="relative z-10 flex items-end justify-center h-full pb-12 sm:pb-16 md:pb-24">
           <div className="text-center px-4">
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase mb-3 sm:mb-4">
-              Бизнес и успех
+              Магия процветания и коммерции
             </h1>
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] sm:tracking-[0.6em] text-zinc-500 uppercase font-light">
               Энергия процветания и власти
