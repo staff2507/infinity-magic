@@ -22,7 +22,7 @@ export default function DivinationPage() {
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-10">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase text-center px-4 leading-tight">
-            Магия предсказаний и прорецаний
+            Магия предсказаний и прорицаний
           </h1>
           <div className="w-12 h-px bg-accent-red/40 mt-4 md:hidden"></div>
         </div>
