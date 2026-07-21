@@ -45,6 +45,9 @@ export default function RootLayout({
               <p className="text-xs text-zinc-500 uppercase tracking-widest italic leading-relaxed max-w-3xl mx-auto px-4">
                 Работаю дистанционно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю. В чрезвычайных ситуациях, где от мастера требуется креативность,есть возможность подключения группы мастеров для усиления и достижения задуманной цели.
               </p>
+              <p className="text-xs text-[#c5a880] uppercase tracking-widest italic leading-relaxed max-w-3xl mx-auto px-4">
+                Ваше спокойствие — это вода, ваша основа — это земля, ваша воля — это огонь, ваша защита — это дух, ваши неприятности — это пепел.
+              </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto px-4">
