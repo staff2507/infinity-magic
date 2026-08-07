@@ -36,7 +36,7 @@ export default function Header() {
           className="flex flex-col hover:opacity-70 transition-opacity duration-300 cursor-pointer max-w-[80%] sm:max-w-none"
         >
           <span className="text-lg sm:text-xl font-serif tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880] uppercase">
-            Magikian herald
+            Magician herald
           </span>
           <span className="text-[9px] sm:text-[11px] font-serif tracking-widest text-[#a855f7] mt-1 italic">
             Qui cognovit arcanum cogitationis, is tenet filum orbium nexus.

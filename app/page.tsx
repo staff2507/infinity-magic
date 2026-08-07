@@ -4,10 +4,7 @@ import Image from 'next/image'
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#050505] animate-reveal selection:bg-red-900/30 selection:text-white break-words overflow-x-hidden">
-      
-      {/* Главный экран с фоновой звездой */}
       <section className="relative min-h-[85vh] py-12 flex flex-col items-center justify-center text-center overflow-hidden">
-        {/* Фоновое изображение */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
             src="/images/star-hero.webp" 
@@ -29,7 +26,7 @@ export default function HomePage() {
             <span className="text-[#c5a880] italic">в современном мире</span>
           </h1>
           
-          <p className="max-w-xl text-red-500 text-sm sm:text-base leading-relaxed tracking-wide uppercase px-2 font-medium">
+          <p className="max-w-xl text-red-400 text-sm sm:text-base leading-relaxed tracking-wide uppercase px-2 font-medium">
             Практикующая помощь в решении сложных жизненных ситуаций, <br className="hidden sm:inline" />
             обретении гармонии и защите вашего будущего.
           </p>
@@ -43,7 +40,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Блок с цитатой */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
         <div className="space-y-6 sm:space-y-8">
           <div className="w-px h-12 bg-gradient-to-b from-transparent to-red-950/60 mx-auto"></div>
@@ -100,7 +96,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Принципы работы */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-12 sm:space-y-16">
         <div className="text-center space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#c5a880]">
@@ -126,7 +121,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Направления */}
       <section id="services" className="py-20 sm:py-32 bg-[#050505]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
           <div className="text-center">
@@ -168,7 +162,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Методология */}
       <section className="py-16 sm:py-24 border-t border-zinc-900 bg-gradient-to-b from-[#050505] to-[#080303]">
         <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16 px-4 sm:px-6">
           <div className="text-center">

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Header from './components/Header'
 
 export const metadata: Metadata = {
-  title: 'Magikian herald',
+  title: 'Magician herald',
   description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации онлайн.',
 }
 
