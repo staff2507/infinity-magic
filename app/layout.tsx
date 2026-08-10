@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Header from './components/Header'
 
 export const metadata: Metadata = {
-  title: 'Magician herald',
+  title: 'Magician Herald',
   description: 'Профессиональные магические услуги: любовная магия, помощь в бизнесе, защитные обряды. Консультации онлайн.',
 }
 
@@ -41,7 +41,7 @@ export default function RootLayout({
             
             <div className="space-y-4">
               <h2 className="text-3xl font-serif tracking-[0.4em] text-emerald-600 uppercase">Контакты</h2>
-              <h2 className="text-1xl font-serif tracking-[0.4em] text-white uppercase">Mag Herald</h2>
+              <h2 className="text-1xl font-serif tracking-[0.4em] text-white uppercase">Magician Herald</h2>
               <p className="text-xs text-zinc-500 uppercase tracking-widest italic leading-relaxed max-w-3xl mx-auto px-4">
                 Работаю дистанционно. Отвечаю на звонки и сообщения в WhatsApp, Viber и Telegram лично. Время для ваших запросов и ответов на них не ограничиваю. Плату за предварительные просмотры и консультации не взимаю. В чрезвычайных ситуациях, где от мастера требуется креативность,есть возможность подключения группы мастеров для усиления и достижения задуманной цели.
               </p>
