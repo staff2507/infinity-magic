@@ -51,9 +51,9 @@ export default function RootLayout({
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto px-4">
-              <ContactButton label="Telegram" href="https://t.me/+380956559205" />
-              <ContactButton label="WhatsApp" href="https://wa.me/380956559205" />
-              <ContactButton label="Viber" href="viber://chat?number=%2B380956559205" />
+              <ContactButton label="Telegram" href="https://t.me/+380934557225" />
+              <ContactButton label="WhatsApp" href="https://wa.me/380934557225" />
+              <ContactButton label="Viber" href="viber://chat?number=%2B380934557225" />
               <ContactButton label="Gmail" href="mailto:r83562392@gmail.com?subject=Запись на консультацию" />
             </div>
 
